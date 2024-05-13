@@ -92,6 +92,17 @@ public class SingleDimensionArray{
     }
 
     /**
+     * Traverses through array, printing out the elements within it.
+     */
+    public void traverse(){
+        System.out.print("( ");
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println(")");
+    }
+
+    /**
      * Deletes the element at the given index
      * @param index
      */
@@ -157,6 +168,9 @@ public class SingleDimensionArray{
         singleDimensionArray.insert(7,8);
         System.out.println(singleDimensionArray.toString());
 
+        //testing the traverse method
+        singleDimensionArray.traverse();
+
         //testing the select by index
 
         System.out.println("We select index 0");
@@ -200,5 +214,6 @@ public class SingleDimensionArray{
         System.out.println("We clear the array");
         singleDimensionArray.clear();
         System.out.println(singleDimensionArray.toString());
+
     }
 }
