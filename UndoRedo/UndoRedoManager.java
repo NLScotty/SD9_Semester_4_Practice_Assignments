@@ -1,4 +1,4 @@
-package DoubleLinkedList;
+package UndoRedo;
 
 /**
  * Undo/Redo Functionality: In applications that support undo/redo functionality, a doubly linked list can be used to
