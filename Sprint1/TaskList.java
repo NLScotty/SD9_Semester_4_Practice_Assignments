@@ -96,13 +96,15 @@ public class TaskList {
     public void displayTasks(){
         if(size == 0){
             System.out.println("There are no tasks to display");
-        }else {
+        }else{
             Node currentNode = head;
             int count = 1;
             while(currentNode != null){
                 System.out.print(count+". "+currentNode.task.description);
                 if(currentNode.task.isComplete()){
                     System.out.print(" (Completed)");
+                }else{
+                    System.out.print(" (Incomplete)");
                 }
                 System.out.println();
                 currentNode = currentNode.next;

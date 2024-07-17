@@ -28,7 +28,7 @@ public class Main {
         users.get(1).setTaskAsComplete(1);
         users.get(2).setTaskAsComplete(0);
         users.get(2).setTaskAsComplete(1);
-        users.get(2).setTaskAsComplete(2);
+        users.get(2).setTaskAsComplete(3);
 
         for(User user : users){
             user.displayTasks();
