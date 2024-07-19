@@ -48,7 +48,7 @@ public class UndoRedoManager<T> {
             return null;
         }
         Node nextState = currentState.next;
-        if( nextState == null){
+        if (nextState == null){
             System.out.println("Reached the last state");
             return null;
         } else {
